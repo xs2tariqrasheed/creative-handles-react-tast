@@ -1,4 +1,5 @@
 import React from 'react';
+import TopSearch from './TopSearch';
 
 const Header = () => (
   <header id="header" className="full-header">
@@ -1323,6 +1324,7 @@ const Header = () => (
                 </ul>
               </div>
             </li>
+
           </ul>
 
           <div id="top-cart">
@@ -1374,21 +1376,7 @@ const Header = () => (
               </div>
             </div>
           </div>
-          <div id="top-search">
-            <a href="#" id="top-search-trigger">
-              <i className="icon-search3" />
-              <i className="icon-line-cross" />
-            </a>
-            <form action="search.html" method="get">
-              <input
-                type="text"
-                name="q"
-                className="form-control"
-                // value=""
-                placeholder="Type &amp; Hit Enter.."
-              />
-            </form>
-          </div>
+          <TopSearch />
         </nav>
       </div>
     </div>

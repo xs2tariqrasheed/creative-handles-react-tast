@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import Section from './Section';
 
 class App extends Component {
   render() {
     return (
-      <Header />
+      <React.Fragment>
+        <Header />
+        <Section />
+      </React.Fragment>
     );
   }
 }
