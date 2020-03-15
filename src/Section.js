@@ -1,13 +1,17 @@
 import React from 'react';
 
 const Section = () => (
-  <section id="slider" className="slider-element slider-parallax full-screen">
-    <div className="slider-parallax-inner">
+  <section id="slider" className="slider-element slider-parallax full-screen" style={{ height: 300 }}>
+    <div className="slider-parallax-inner" style={{
+      height: 300,
+      transform: 'translateY(0px)'
+    }}>
       <div
         className="full-screen"
         style={{
-          background: `url('images/appshowcase/1.jpg')`,
-          backgroundSize: 'cover'
+          background: 'url("images/appshowcase/1.jpg")',
+          backgroundSize: 'cover',
+          height: 300,
         }}
       >
         <div className="container clearfix">
@@ -15,20 +19,21 @@ const Section = () => (
             src="images/appshowcase/slider-iphone.png"
             alt="Image"
             className="d-none d-lg-block"
-            style={{
-              position: 'absolute',
-              left: 0,
-              bottom: 0,
-              top: -22,
-            }}
-            data-height-lg="450"
+            style={{ position: 'absolute', left: 0, bottom: 0 }}
+            data-height-lg={450}
           />
-
-          <div className="vertical-middle no-fade">
+          <div className="vertical-middle no-fade" style={{
+            position: 'absolute',
+            top: 'absolute',
+            width: '100%',
+            paddingTop: '100%',
+            paddingBottom: 0,
+            marginTop: -192,
+          }}>
             <div
               className="col_half dark fright nobottommargin"
               data-animate="fadeIn"
-              >
+            >
               <div className="emphasis-title">
                 <h1>
                   The new way to create awesome websites. Try using{' '}
