@@ -1,0 +1,180 @@
+/* ----------------------------------------------------------------
+
+	pagetitle.scss
+
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Page Title
+-----------------------------------------------------------------*/
+#page-title {
+  position: relative;
+  padding: 50px 0;
+  background-color: whitesmoke;
+  border-bottom: 1px solid #eeeeee; }
+  .dark #page-title {
+    background-color: #282828;
+    border-bottom-color: #3f3f3f; }
+  @media (max-width: 767.98px) {
+    #page-title {
+      padding: 20px 0 25px;
+      text-align: center; } }
+  #page-title .container {
+    position: relative; }
+  #page-title h1 {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333333;
+    font-size: 28px;
+    text-transform: uppercase; }
+    .dark #page-title h1 {
+      color: rgba(255, 255, 255, 0.9) !important; }
+    @media (max-width: 767.98px) {
+      #page-title h1 {
+        line-height: 1.5;
+        font-size: 24px; } }
+  #page-title span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #777777;
+    font-size: 18px; }
+    .dark #page-title span {
+      color: rgba(255, 255, 255, 0.7); }
+
+.breadcrumb {
+  position: absolute !important;
+  width: auto !important;
+  top: 50% !important;
+  left: auto !important;
+  right: 15px !important;
+  margin: 0 !important;
+  transform: translateY(-50%);
+  background-color: transparent !important;
+  padding: 0 !important;
+  font-size: 12px; }
+  @media (max-width: 767.98px) {
+    .breadcrumb {
+      position: relative !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      margin: 20px 0 0 !important;
+      justify-content: center;
+      transform: none; } }
+
+body.stretched .container-fullwidth .breadcrumb {
+  right: 60px !important; }
+
+.breadcrumb a {
+  color: #555555; }
+  .dark .breadcrumb a {
+    color: #bbbbbb; }
+  .breadcrumb a:hover {
+    color: #1ABC9C; }
+    .dark .breadcrumb a:hover {
+      color: #eeeeee; }
+
+.breadcrumb i {
+  width: auto !important; }
+
+/* Page Title - Dark
+-----------------------------------------------------------------*/
+#page-title {
+  /* Page Title - Right Aligned
+	-----------------------------------------------------------------*/
+  /* Page Title - Center Aligned
+	-----------------------------------------------------------------*/
+  /* Page Title - Background Pattern
+	-----------------------------------------------------------------*/
+  /* Page Title - Parallax Background
+	-----------------------------------------------------------------*/
+  /* Page Title - Mini
+	-----------------------------------------------------------------*/
+  /* Page Title - No Background
+	-----------------------------------------------------------------*/
+  /* Page Title - Video
+	-----------------------------------------------------------------*/ }
+  #page-title.page-title-dark {
+    background-color: #333333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15) !important;
+    border-bottom: none; }
+    #page-title.page-title-dark h1 {
+      color: rgba(255, 255, 255, 0.9) !important; }
+    #page-title.page-title-dark span {
+      color: rgba(255, 255, 255, 0.7); }
+    #page-title.page-title-dark .breadcrumb > .active {
+      color: rgba(255, 255, 255, 0.6); }
+    #page-title.page-title-dark .breadcrumb a {
+      color: rgba(255, 255, 255, 0.8); }
+    #page-title.page-title-dark .breadcrumb a:hover {
+      color: rgba(255, 255, 255, 0.95); }
+  #page-title.page-title-right {
+    text-align: right; }
+    #page-title.page-title-right .breadcrumb {
+      left: 15px !important;
+      right: auto !important; }
+  #page-title.page-title-center {
+    text-align: center; }
+    #page-title.page-title-center span {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto; }
+    #page-title.page-title-center .breadcrumb {
+      position: relative !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      margin: 20px 0 0 !important;
+      justify-content: center; }
+  #page-title.page-title-pattern {
+    background-image: url("images/pattern.png");
+    background-repeat: repeat;
+    background-attachment: fixed; }
+    .dark #page-title.page-title-pattern {
+      background-image: url("../images/pattern2.png"); }
+  #page-title.page-title-parallax {
+    padding: 100px 0;
+    text-shadow: none;
+    border-bottom: none;
+    background-color: transparent;
+    background-image: url("images/parallax/parallax-bg.jpg");
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat; }
+    #page-title.page-title-parallax h1 {
+      font-size: 40px;
+      font-weight: 600;
+      letter-spacing: 2px; }
+    #page-title.page-title-parallax span {
+      font-size: 22px; }
+    #page-title.page-title-parallax .breadcrumb {
+      font-size: 13px; }
+  #page-title.page-title-mini {
+    padding: 20px 0; }
+    #page-title.page-title-mini h1 {
+      font-weight: 600;
+      font-size: 18px;
+      color: #444444; }
+    #page-title.page-title-mini span {
+      display: none; }
+  #page-title.page-title-nobg {
+    background: transparent !important;
+    border-bottom: 1px solid #eeeeee;
+    border-bottom-color: #e5e5e5; }
+  #page-title.page-title-video {
+    background: none;
+    position: relative;
+    overflow: hidden; }
+    #page-title.page-title-video .container {
+      z-index: 3; }
+    #page-title.page-title-video .video-wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+      #page-title.page-title-video .video-wrap video {
+        width: 100%; }

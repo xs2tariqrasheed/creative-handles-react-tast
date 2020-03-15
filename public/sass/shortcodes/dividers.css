@@ -1,0 +1,127 @@
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: dividers.scss
+
+-----------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Divider
+-----------------------------------------------------------------*/
+.divider {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  overflow: hidden;
+  margin: 35px 0;
+  color: #e5e5e5;
+  width: 100%;
+  /* Divider - Icon Align Right
+	-----------------------------------------------------------------*/
+  /* Divider - Icon Align Center
+	-----------------------------------------------------------------*/
+  /* Divider - Rounded Icon
+	-----------------------------------------------------------------*/
+  /* Divider - Rounded & Border
+	-----------------------------------------------------------------*/
+  /* Divider - Line Only
+	-----------------------------------------------------------------*/ }
+  .dark .divider {
+    color: rgba(255, 255, 255, 0.15); }
+  .divider-margin {
+    margin: 70px 0; }
+  .divider:after, .divider-center:before, .divider-center.divider-short:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 30px;
+    height: 0;
+    transform: translateY(-50%);
+    border-top: 1px solid #eeeeee; }
+    .dark .divider:after, .dark .divider-center:before, .dark .divider-center.divider-short:before {
+      border-top-color: rgba(255, 255, 255, 0.1); }
+  .divider-thick:after, .divider-center.divider-thick:before, .divider-center.divider-short.divider-thick:before {
+    border-top-width: 3px; }
+  .divider-short:after {
+    width: 30%; }
+  .divider-vshort:after {
+    width: 12%; }
+  .divider i {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    line-height: 1;
+    font-size: 18px !important;
+    text-align: center; }
+  .divider a {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .divider a:hover {
+      color: #888888; }
+  .divider-right {
+    text-align: right;
+    justify-content: flex-end; }
+    .divider-right:after {
+      left: auto;
+      right: 30px; }
+  .divider-center, .divider-center.divider-short {
+    text-align: center;
+    justify-content: center; }
+  .divider-center {
+    /* Short Divider - Icon Align Center
+		-----------------------------------------------------------------*/ }
+    .divider-center:before {
+      left: -50% !important;
+      right: 0;
+      margin-left: -20px; }
+    .divider-center:after {
+      left: 50% !important;
+      right: 0;
+      margin-left: 20px; }
+    .divider-center.divider-short:before {
+      left: auto !important;
+      right: 50%;
+      margin-right: 20px;
+      width: 15%; }
+    .divider-center.divider-short:after {
+      left: 50% !important;
+      right: auto !important;
+      margin-left: 20px;
+      width: 15%; }
+    .divider-center.divider-vshort:before, .divider-center.divider-vshort:after {
+      width: 6%; }
+  .divider-rounded {
+    color: #bbbbbb; }
+  .divider-rounded:after, .divider-rounded.divider-center:before, .divider-rounded.divider-short:before, .divider-border:after, .divider-border.divider-center:before, .divider-border.divider-short:before {
+    left: 40px; }
+  .dark .divider-rounded, .dark .divider-border {
+    color: #999999; }
+  .divider-rounded i, .divider-border i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: whitesmoke;
+    border-radius: 50%; }
+    .dark .divider-rounded i, .dark .divider-border i {
+      background-color: rgba(255, 255, 255, 0.1); }
+  .divider-rounded i {
+    color: #bbbbbb; }
+  .divider-rounded.divider-right:after, .divider-border.divider-right:after {
+    left: auto;
+    right: 40px; }
+  .divider-border {
+    color: #e5e5e5; }
+    .divider-border i {
+      line-height: 38px;
+      background-color: transparent;
+      border: 1px solid #eeeeee; }
+      .dark .divider-border i {
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.15); }
+  .divider-line:before, .divider-line:after {
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
